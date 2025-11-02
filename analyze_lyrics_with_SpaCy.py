@@ -5,7 +5,7 @@ import os
 import sys
 import nltk
 from konlpy.tag import Okt
-from nltk.tokenize import TweetTokenizer
+import spacy  # 【【新功能】】 匯入 spaCy
 from collections import Counter
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
@@ -93,7 +93,7 @@ def load_stopwords():
         'everybody', 'yes', 'okay', 'something', 'nothing', 'everything',
         'im', 'youre', 'thats', 'dont', 'cant', 'couldnt', 'baby', 
         'thing', 'four', 'five', 'look', 'see', 'get', 'go', 'know', 'like','yeah','ba','nae','doo',
-        'em', 'ho', 'whoa', 'nan', 'ra', 'pa', 'gee', 'de', 'ee', 'di', 'lo', 'ru', 'wow', 'hm', 'babe'
+        'em', 'ho', 'whoa', 'nan', 'ra', 'pa', 'gee', 'de', 'ee', 'di', 'lo', 'ru', 'wow', 'hm', 'babe',
         'six', 'seven', 'eight', 'nine', 'ten', 'bam', 'bba', 'ou', 'ddu', 'ye', 'ok', 'would'
     }
     eng_stopwords.update(custom_eng_stopwords)
@@ -104,13 +104,10 @@ def load_stopwords():
         print(f"警告：找不到韓文停用詞檔案 {STOPWORD_FILE}。將只使用內建停用詞。")
         kor_stopwords = set()
     else:
-        # 【需求 1】從您的 ko.json 檔案載入
         with open(STOPWORD_FILE, 'r', encoding='utf-8') as f:
             kor_stopwords = set(json.load(f))
             
-    # 【需求 1 修改】
-    # 移除了 '난', '넌' ... 等一般停用詞 (假設您會將它們加入 ko.json)
-    # 只保留「詞幹停用詞」，這對於詞幹提取(stem=True)至關重要
+    # 【關鍵優化】加入詞幹停用詞
     custom_kor_stopwords = {
         "!", "\"", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "...", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
           ";", "<", "=", ">", "?", "@", "\\", "^", "_", "`", "|", "~", "·", "—", "——","'", "“", "”", "…", "、", "。", "〈", "〉",
@@ -165,22 +162,40 @@ def process_korean(text, okt, stopwords):
         
     tokens = []
     for word, pos in pos_tags:
-        # 【【需求 2 修改】】
-        # 只保留有意義的詞性：名詞、動詞、形容詞 (移除了 'Adverb')
+        # 只保留有意義的詞性：名詞、動詞、形容詞
         if pos in ['Noun', 'Verb', 'Adjective']:
             if word not in stopwords and len(word) > 1: 
                 tokens.append(word)
     return tokens
 
-def process_english(text, tokenizer, stopwords):
-    """使用 TweetTokenizer 和 縮寫還原"""
+# 【【【 函數已更新 】】】
+def process_english(text, nlp, stopwords):
+    """
+    【新功能】使用 spaCy 進行斷詞、詞形還原 (Lemmatization) 和停用詞移除
+    """
+    # 1. 仍然先執行縮寫還原
     text = expand_contractions(text)
-    tokens = tokenizer.tokenize(text)
+    
+    # 2. 將文字交給 spaCy 處理
+    doc = nlp(text)
+    
     processed_tokens = []
-    for word in tokens:
-        if word.isalpha(): 
-            if word not in stopwords and len(word) > 1:
-                processed_tokens.append(word)
+    for token in doc:
+        # 3. 取得詞形還原後的詞 (e.g., "nights" -> "night")
+        #    並統一轉為小寫
+        lemma = token.lemma_.lower()
+        
+        # 4. 處理代名詞 (spaCy 會將 'I', 'you' 還原成 '-PRON-')
+        #    我們將其保留為原始文字
+        if token.lemma_ == '-PRON-':
+            lemma = token.text.lower()
+            
+        # 5. 只保留純字母的單字
+        if lemma.isalpha(): 
+            # 6. 移除停用詞和單字
+            if lemma not in stopwords and len(lemma) > 1:
+                processed_tokens.append(lemma)
+                
     return processed_tokens
 
 def generate_wordcloud(counts, font_path, filename):
@@ -209,6 +224,28 @@ def generate_wordcloud(counts, font_path, filename):
     except Exception as e:
         print(f"產生文字雲 {filename} 時發生錯誤: {e}")
 
+# 【【【 新功能 】】】
+def load_spacy_model():
+    """
+    載入 spaCy 英文模型，如果找不到則提供安裝指示
+    """
+    model_name = "en_core_web_sm"
+    try:
+        # 嘗試載入模型
+        nlp = spacy.load(model_name)
+        print(f"-> 成功載入 SpaCy 英文模型 ({model_name})。")
+        return nlp
+    except OSError:
+        # 如果模型不存在
+        print("\n" + "="*50)
+        print(f"【【 錯誤：找不到 SpaCy 英文模型 '{model_name}' 】】")
+        print("     spaCy 需要一個語言模型來進行詞形還原。")
+        print("\n--- 請在您的終端機中執行以下指令來下載模型: ---")
+        print(f"     python -m spacy download {model_name}")
+        print("="*50 + "\n")
+        print("下載完成後，請重新執行此程式。")
+        sys.exit() # 停止程式，讓使用者去下載
+
 def main():
     """主執行函數"""
     
@@ -225,7 +262,7 @@ def main():
         print("錯誤：CSV 檔案中找不到 'lyrics' 欄位。")
         return
         
-    # 2. 載入停用詞 (已根據需求 1 修改)
+    # 2. 載入停用詞
     eng_stopwords, kor_stopwords = load_stopwords()
 
     # 3. 自動設定 JAVA_HOME
@@ -234,16 +271,16 @@ def main():
         print(f"-> 偵測到 Conda 環境，正在手動設定 JAVA_HOME: {conda_prefix}")
         os.environ['JAVA_HOME'] = conda_prefix
             
-    # 4. 初始化分析器
+    # 4. 初始化分析器 (【【已更新】】)
     try:
+        # 【新功能】 載入 spaCy 模型
+        nlp_eng = load_spacy_model()
+        
         print("正在初始化韓文斷詞器 (Okt)...")
         okt = Okt()
-        print("正在初始化英文斷詞器 (TweetTokenizer)...")
-        tweet_tokenizer = TweetTokenizer(
-            preserve_case=False,
-            reduce_len=True,
-            strip_handles=True
-        )
+
+        # (已移除 TweetTokenizer)
+        
         print("-> 分析器初始化成功。")
     except Exception as e:
         print("\n【【【 錯誤：初始化 KoNLPy (Okt) 失敗 】】】")
@@ -256,8 +293,8 @@ def main():
     print("\n--- 正在自動尋找韓文字型檔 ---")
     FONT_PATH = find_font_path()
     
-    # 6. 處理所有歌詞
-    print("\n--- 正在處理所有歌詞 (斷詞、停用詞移除) ---")
+    # 6. 處理所有歌詞 (【【已更新】】)
+    print("\n--- 正在處理所有歌詞 (斷詞、停用詞移除、詞形還原) ---")
     
     all_kor_tokens = []
     all_eng_tokens = []
@@ -274,12 +311,13 @@ def main():
         korean_lyrics_list.append(kor_text)
         english_lyrics_list.append(eng_text)
         
-        # 韓文處理 (已根據需求 2 修改)
         kor_tokens = process_korean(kor_text, okt, kor_stopwords)
         korean_tokens_list.append(kor_tokens)
         all_kor_tokens.extend(kor_tokens)
         
-        eng_tokens = process_english(eng_text, tweet_tokenizer, eng_stopwords)
+        # 【【已更新】】
+        # 將 nlp_eng 模型傳入，取代 TweetTokenizer
+        eng_tokens = process_english(eng_text, nlp_eng, eng_stopwords)
         english_tokens_list.append(eng_tokens)
         all_eng_tokens.extend(eng_tokens)
         
@@ -315,7 +353,7 @@ def main():
     for word, count in eng_counts.most_common(100):
         print(f"{word}: {count}")
         
-    print("\n(請檢視以上詞頻列表，將不想要的詞彙手動新增到 ko.json 或程式碼中的 custom_stopwords 列表中，然後重新執行，即可優化結果。)")
+    print("\n(請檢視以上詞頻列表，將不想要的詞彙手動新增到 ko.json 檔案中，然後重新執行，即可優化結果。)")
 
     # 9. 產生文字雲
     print("\n--- 正在產生文字雲 ---")
