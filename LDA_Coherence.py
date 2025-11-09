@@ -58,7 +58,7 @@ def compute_coherence_values(dictionary, corpus, texts, topic_range):
 
 if __name__ == '__main__':
     # 資料讀取和預處理
-    input_file = "processed_HYPE_data_ver2.csv"
+    input_file = "merged_lyrics_with_labels.csv"
     df = pd.read_csv(input_file)
     # 應用轉換，這將是你的新最終詞彙欄位
     df['final_tokens_restored'] = df['final_tokens'].apply(convert_str_to_list)
@@ -136,12 +136,12 @@ if __name__ == '__main__':
 
     # 標記最佳主題數量
     plt.scatter(optimal_num_topics, max_score, color='red', s=100,
-                label=f'最佳主題數: {optimal_num_topics} (Score: {max_score:.4f})')
+                label=f'Best Number of Topics: {optimal_num_topics} (Score: {max_score:.4f})')
     plt.axvline(x=optimal_num_topics, color='r', linestyle='--', linewidth=0.8)
 
     # 設定圖表標籤
-    plt.title("LDA 主題連貫性分數 (Coherence Score) 趨勢", fontsize=16)
-    plt.xlabel("主題數量 (Number of Topics)", fontsize=12)
+    plt.title("LDA Coherence Score", fontsize=16)
+    plt.xlabel("Number of Topics", fontsize=12)
     plt.ylabel("Coherence Score ($C_v$)", fontsize=12)
     plt.xticks(topic_range)
     plt.grid(True, linestyle='--', alpha=0.6)
@@ -156,4 +156,3 @@ if __name__ == '__main__':
     print(f"\n✨ 推薦的最佳主題數量是: {optimal_num_topics} (Coherence Score: {max_score:.4f})")
 
     plt.show()
-
