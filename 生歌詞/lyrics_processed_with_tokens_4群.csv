@@ -1,0 +1,131 @@
+﻿Song_ID,Topic_Group,Generated_Time,lyrics,korean_lyrics,english_lyrics,korean_tokens,english_tokens,final_tokens
+1,Topic 2 (Generated),2025-12-03 19:44:41,"날 지난 여름부터 나를 괴롭혀온 여잔
+그런 너의 속을 아는지
+예쁜이들 사이에 난 여자야
+(Come on, check) Yeah (Come on)
+날 버린 그대들의 여자
+그녀의 그 한마디면 다 한 귀감아요
+뻔한 말로 피하지마
+사랑을 원하는데 어딜 할까 말까 고민해도
+도대체 뭘 원하는지 알수 있을까? Let's go okay the house
+Hurry this house
+Shake up make you smile들이 즐겨준 노래 too love
+모두 잊은 눈 감기처럼
+오래도록 널 사랑해 왔는데
+맘속에 아직도 everydy, wait down in 2yy
+I know you're bringer at night
+Talk took, take and jump 네 손",날 지난 여름부터 나를 괴롭혀온 여잔 그런 너의 속을 아는지 예쁜이들 사이에 난 여자야 날 버린 그대들의 여자 그녀의 그 한마디면 다 한 귀감아요 뻔한 말로 피하지마 사랑을 원하는데 어딜 할까 말까 고민해도 도대체 뭘 원하는지 알수 있을까 들이 즐겨준 노래 모두 잊은 눈 감기처럼 오래도록 널 사랑해 왔는데 맘속에 아직도 네 손,Come on check Yeah Come on Let s go okay the house Hurry this house Shake up make you smile too love everydy wait down in yy I know you re bringer at night Talk took take and jump,"['지난', '여름', '나르다', '괴롭히다', '이다', '그렇다', '알다', '예쁘다', '들다', '사이', '여자', '버리다', '그대', '여자', '그녀', '귀감', '뻔하다', '말로', '사랑', '원하다', '말다', '고민', '도대체', '원하다', '알다', '들이다', '즐기다', '노래', '잊다', '감기', '사랑', '오다', '맘속']","['check', 'house', 'hurry', 'house', 'shake', 'make', 'smile', 'love', 'everydy', 'wait', 'yy', 'bringer', 'night', 'talk', 'jump']","['지난', '여름', '나르다', '괴롭히다', '이다', '그렇다', '알다', '예쁘다', '들다', '사이', '여자', '버리다', '그대', '여자', '그녀', '귀감', '뻔하다', '말로', '사랑', '원하다', '말다', '고민', '도대체', '원하다', '알다', '들이다', '즐기다', '노래', '잊다', '감기', '사랑', '오다', '맘속', 'check', 'house', 'hurry', 'house', 'shake', 'make', 'smile', 'love', 'everydy', 'wait', 'yy', 'bringer', 'night', 'talk', 'jump']"
+2,Topic 2 (Generated),2025-12-03 19:44:50,"널이 어떻게 된 건지 (Herefto’s about who?)
+근데 지금 우리 사이에 (TWORK, TWORK)
+터질 듯한 감정의 불꽃이, one-get's dress for power
+놀라운 착각 속에 나를 맡겨봐
+(Yeah) 너만 사랑한단 말곤 믿어줄 수 없이
+(Ooh) 어디서든 날 자유롭게 할 거야 okay (Ayy) okay (Nobody, oriated?)
+내가 정말 원해 난 그런 내가 좋아, you're not more with move?
+아직까진 몰라도 한참 지난 시간에 내 앞에 나타난 그 순결한 눈빛을 기억해 나로써는 so four (So sexual, hmm), 혹은 zombing control (Call and runn in the lib럿에)
+(Word",널이 어떻게 된 건지 근데 지금 우리 사이에 터질 듯한 감정의 불꽃이 놀라운 착각 속에 나를 맡겨봐 너만 사랑한단 말곤 믿어줄 수 없이 어디서든 날 자유롭게 할 거야 내가 정말 원해 난 그런 내가 좋아 아직까진 몰라도 한참 지난 시간에 내 앞에 나타난 그 순결한 눈빛을 기억해 나로써는 혹은 럿에,Herefto s about who TWORK TWORK one get s dress for power Yeah Ooh okay Ayy okay Nobody oriated you re not more with move so four So sexual hmm zombing control Call and runn in the lib Word,"['어떻다', '되다', '건지다', '지금', '사이', '터지다', '감정', '불꽃', '놀랍다', '착각', '나르다', '맡기다', '사랑', '한단', '말다', '믿다', '서든', '자유롭다', '정말', '원하다', '그렇다', '좋다', '모르다', '한참', '지난', '나타나다', '순결하다', '눈빛', '기억', '나로', '써다']","['herefto', 'twork', 'twork', 'dress', 'power', 'nobody', 'oriate', 'move', 'sexual', 'zombe', 'control', 'call', 'runn', 'lib', 'word']","['어떻다', '되다', '건지다', '지금', '사이', '터지다', '감정', '불꽃', '놀랍다', '착각', '나르다', '맡기다', '사랑', '한단', '말다', '믿다', '서든', '자유롭다', '정말', '원하다', '그렇다', '좋다', '모르다', '한참', '지난', '나타나다', '순결하다', '눈빛', '기억', '나로', '써다', 'herefto', 'twork', 'twork', 'dress', 'power', 'nobody', 'oriate', 'move', 'sexual', 'zombe', 'control', 'call', 'runn', 'lib', 'word']"
+3,Topic 2 (Generated),2025-12-03 19:44:57,"시작, I'm gonna talk to me
+Let's love on the night what crying?
+I'ma flow this song
+Worcom
+And bite song 'em queen, you can see
+Yes and eyes, 난 오늘부터 함께 하게 될 거니까 (again)
+오늘의 너와 나는 매일 같은 꿈을 꾸는 그런 여자 그댈 볼 수가 없게 되겠어 (no) 어제 일 심져요
+그제저녁이 진짜 놀 줄 알았다 갔다
+나머지는 몰라 이 밤이 진짜인거야
+내일도 열띤토론회 해 보자고
+우린 밤새 놀아가고 싶다고 말했지
+밤은 새 시작일 뿐인데
+오늘만은 나와 같이 있고 싶어졌대
+내가 먼저 꺼낸 선물 같던 토퍼를 내가 사줘
+내일은 안나와 어",시작 난 오늘부터 함께 하게 될 거니까 오늘의 너와 나는 매일 같은 꿈을 꾸는 그런 여자 그댈 볼 수가 없게 되겠어 어제 일 심져요 그제저녁이 진짜 놀 줄 알았다 갔다 나머지는 몰라 이 밤이 진짜인거야 내일도 열띤토론회 해 보자고 우린 밤새 놀아가고 싶다고 말했지 밤은 새 시작일 뿐인데 오늘만은 나와 같이 있고 싶어졌대 내가 먼저 꺼낸 선물 같던 토퍼를 내가 사줘 내일은 안나와 어,I m gonna talk to me Let s love on the night what crying I ma flow this song Worcom And bite song em queen you can see Yes and eyes again no,"['시작', '오늘', '되다', '오늘', '매일', '꾸다', '그렇다', '여자', '대다', '수가', '되다', '어제', '심다', '저녁', '진짜', '알다', '가다', '나머지', '모르다', '진짜', '이다', '내일', '토론회', '우린', '밤새', '놀다', '작일', '오늘', '나오다', '먼저', '꺼내다', '선물', '토퍼', '사주다', '내일', '안나']","['talk', 'love', 'night', 'cry', 'flow', 'song', 'worcom', 'bite', 'song', 'queen', 'eye']","['시작', '오늘', '되다', '오늘', '매일', '꾸다', '그렇다', '여자', '대다', '수가', '되다', '어제', '심다', '저녁', '진짜', '알다', '가다', '나머지', '모르다', '진짜', '이다', '내일', '토론회', '우린', '밤새', '놀다', '작일', '오늘', '나오다', '먼저', '꺼내다', '선물', '토퍼', '사주다', '내일', '안나', 'talk', 'love', 'night', 'cry', 'flow', 'song', 'worcom', 'bite', 'song', 'queen', 'eye']"
+4,Topic 2 (Generated),2025-12-03 19:45:05,"네ople won't nice but you
+숨기고 싶지 않은 사실을 알아챘다면
+내 품으로 너를 데려오지-싫으면
+If ya tell me sweet, eh
+My heels’eaking I wanna doesn (Hiske)
+이제 더 이상 참고 기다릴 수 없어
+Wake give to flow the rules?
+더 알고 싶어 기대에 찬 눈빛을 보낸 그 순간
+Yes, here's one, and I (Are you know) 널 믿을 수 밖에 안 되게끔 만들 거야
+널 움직여 a champ of plans
+이런 attack적인 몸짓에 휘둘려 you cannot born like that I
+Do, alright word obsessed and daugh!
+Please deep starts, it's m",네 숨기고 싶지 않은 사실을 알아챘다면 내 품으로 너를 데려오지 싫으면 이제 더 이상 참고 기다릴 수 없어 더 알고 싶어 기대에 찬 눈빛을 보낸 그 순간 널 믿을 수 밖에 안 되게끔 만들 거야 널 움직여 이런 적인 몸짓에 휘둘려,ople won t nice but you If ya tell me sweet eh My heels eaking I wanna doesn Hiske Wake give to flow the rules Yes here s one and I Are you know a champ of plans attack you cannot born like that I Do alright word obsessed and daugh Please deep starts it s m,"['숨기', '사실', '알아채다', '데려오다', '싫다', '이제', '참고', '기다리다', '기대', '눈빛', '보내다', '순간', '믿다', '되다', '만들다', '움직이다', '이렇다', '몸짓', '두다']","['ople', 'win', 'nice', 'tell', 'sweet', 'heel', 'eake', 'want', 'hiske', 'wake', 'give', 'flow', 'rule', 'champ', 'plan', 'attack', 'bear', 'alright', 'word', 'obsess', 'daugh', 'deep', 'start']","['숨기', '사실', '알아채다', '데려오다', '싫다', '이제', '참고', '기다리다', '기대', '눈빛', '보내다', '순간', '믿다', '되다', '만들다', '움직이다', '이렇다', '몸짓', '두다', 'ople', 'win', 'nice', 'tell', 'sweet', 'heel', 'eake', 'want', 'hiske', 'wake', 'give', 'flow', 'rule', 'champ', 'plan', 'attack', 'bear', 'alright', 'word', 'obsess', 'daugh', 'deep', 'start']"
+5,Topic 2 (Generated),2025-12-03 19:45:13,"
+출입문이 열리죠~
+너를 꺼내볼래, oh baby
+아직 안 나와
+옷차림 happin' you fall in more
+Back to the chillion I no world
+내 심장은 온통 rush (We rocking around)
+뇌가 두근두근, ahor count on two that sto-ten
+영원히 널 만들지 난 날 위로 올릴게 뻔뻔하지
+(다윗 해 쳐도, 자꾸만)
+세상을 또 흔들어놔
+(더도 말고 더!!!
+No, and don’t closer)
+어둠이 깔린 조명 아래 텅 빈
+숨겨놓은 desire가 깔려있어
+정신 하나 없는 네 몸속의 signal?
+네 곁에서 맴도는 rule
+수 많은 별들 속에서 널 볼 수 있어
+빛마저 예",출입문이 열리죠 너를 꺼내볼래 아직 안 나와 옷차림 내 심장은 온통 뇌가 두근두근 영원히 널 만들지 난 날 위로 올릴게 뻔뻔하지 다윗 해 쳐도 자꾸만 세상을 또 흔들어놔 더도 말고 더 어둠이 깔린 조명 아래 텅 빈 숨겨놓은 가 깔려있어 정신 하나 없는 네 몸속의 네 곁에서 맴도는 수 많은 별들 속에서 널 볼 수 있어 빛마저 예,oh baby happin you fall in more Back to the chillion I no world rush We rocking around ahor count on two that sto ten No and don t closer desire signal rule,"['출입문', '열리다', '꺼내다', '나오다', '옷차림', '심장', '온통', '영원하다', '만들다', '위로', '올리다', '뻔하다', '다윗', '치다', '자꾸만', '세상', '흔들다', '놓다', '어둠', '깔리다', '조명', '아래', '숨기다', '가다', '깔다', '정신', '몸속', '맴도', '많다']","['baby', 'happin', 'fall', 'back', 'chillion', 'world', 'rush', 'rock', 'around', 'ahor', 'count', 'sto', 'close', 'desire', 'signal', 'rule']","['출입문', '열리다', '꺼내다', '나오다', '옷차림', '심장', '온통', '영원하다', '만들다', '위로', '올리다', '뻔하다', '다윗', '치다', '자꾸만', '세상', '흔들다', '놓다', '어둠', '깔리다', '조명', '아래', '숨기다', '가다', '깔다', '정신', '몸속', '맴도', '많다', 'baby', 'happin', 'fall', 'back', 'chillion', 'world', 'rush', 'rock', 'around', 'ahor', 'count', 'sto', 'close', 'desire', 'signal', 'rule']"
+6,Topic 2 (Generated),2025-12-03 19:45:23,"전 matter where up
+I gotta comes to fly high, yeah
+Haha!
+Me or a boys, oh-yeah (Topi)
+You know the ""rime's onst readies for attack this internet WS""
+Wasting U Luv C'Con vizitous, let’s player trazer, two-breakin rumaw
+Don't nobody, new party dress and Secretary, sexy la-A, das nation? You know 넌 내게 반해 있는 걸?
+(Ooh) walking the lips, without your fire
+(Trust me, juncontratorportency), tempo, washic,",전 넌 내게 반해 있는 걸,matter where up I gotta comes to fly high yeah Haha Me or a boys oh yeah Topi You know the rime s onst readies for attack this internet WS Wasting U Luv C Con vizitous let s player trazer two breakin rumaw Don t nobody new party dress and Secretary sexy la A das nation You know Ooh walking the lips without your fire Trust me juncontratorportency tempo washic,"['내다', '반하다']","['matter', 'fly', 'high', 'haha', 'boy', 'topi', 'rime', 'onst', 'ready', 'attack', 'internet', 'ws', 'waste', 'luv', 'con', 'vizitous', 'player', 'trazer', 'breakin', 'rumaw', 'nobody', 'new', 'party', 'dress', 'secretary', 'sexy', 'das', 'nation', 'walk', 'lip', 'without', 'fire', 'trust', 'juncontratorportency', 'tempo', 'washic']","['내다', '반하다', 'matter', 'fly', 'high', 'haha', 'boy', 'topi', 'rime', 'onst', 'ready', 'attack', 'internet', 'ws', 'waste', 'luv', 'con', 'vizitous', 'player', 'trazer', 'breakin', 'rumaw', 'nobody', 'new', 'party', 'dress', 'secretary', 'sexy', 'das', 'nation', 'walk', 'lip', 'without', 'fire', 'trust', 'juncontratorportency', 'tempo', 'washic']"
+7,Topic 2 (Generated),2025-12-03 19:45:28,"
+ooh, pap-dubelmente a mous
+Y'as like them getting this right world can didn’ed on with secret ours in the your body
+Oh, for tough nobody and just tonight
+And everyday to ruin ""watch out, kick that"" (No, I fe)
+Baby, bae-bae, 두근대 너의 머릿속
+두근대 그 자식은 몰라
+Drive me, wait 날 아는 네겐 'cause tiemade down three'
+내 어깨 높이 위에 걸쳐 있는 매 순간에 나는 선반 위의 주인인걸?
+(Oh-oh), 두근대 이 순간만은 놓치지 말고 기억해
+They's hide if your fresents, an",두근대 너의 머릿속 두근대 그 자식은 몰라 날 아는 네겐 내 어깨 높이 위에 걸쳐 있는 매 순간에 나는 선반 위의 주인인걸 두근대 이 순간만은 놓치지 말고 기억해,ooh pap dubelmente a mous Y as like them getting this right world can didn ed on with secret ours in the your body Oh for tough nobody and just tonight And everyday to ruin watch out kick that No I fe Baby bae bae Drive me wait cause tiemade down three Oh oh They s hide if your fresents an,"['근대', '머릿속', '근대', '자식', '모르다', '알다', '네겐', '어깨', '높이', '걸치다', '순간', '선반', '주인', '근대', '순간', '놓치다', '기억']","['pap', 'dubelmente', 'mous', 'right', 'world', 'ed', 'secret', 'body', 'tough', 'nobody', 'tonight', 'everyday', 'ruin', 'watch', 'kick', 'fe', 'baby', 'bae', 'bae', 'drive', 'wait', 'tiemade', 'hide', 'fresent']","['근대', '머릿속', '근대', '자식', '모르다', '알다', '네겐', '어깨', '높이', '걸치다', '순간', '선반', '주인', '근대', '순간', '놓치다', '기억', 'pap', 'dubelmente', 'mous', 'right', 'world', 'ed', 'secret', 'body', 'tough', 'nobody', 'tonight', 'everyday', 'ruin', 'watch', 'kick', 'fe', 'baby', 'bae', 'bae', 'drive', 'wait', 'tiemade', 'hide', 'fresent']"
+8,Topic 2 (Generated),2025-12-03 19:45:31,"서
+Come on, come on
+어느새 묘한 여린 향기도
+그곳 아가씨의 질투도
+다른 애태우지 말고 다른 건 다 갖자.
+당연한 얘기지만
+왜냐하면 너도 날 인정할 것?
+(Come on)
+네가 내색을 하지 않아도 결국)
+그럼 왜 아직 서글서글해? Come on
+Here up and makes hide nothing
+Can't stop themes, passiated boys down and two, give three
+아무리 둘러봐도 딱 너의 컴플렉스 같아
+너 하나만 꼭 알아 이 순간 진짜 다 가석에 들게 (Yeah)
+Somethings, sweet forever
+One-step & Turn it's a freed Mr. Victory
+Johnson instruments llegin 'ma alone lead",서 어느새 묘한 여린 향기도 그곳 아가씨의 질투도 다른 애태우지 말고 다른 건 다 갖자 당연한 얘기지만 왜냐하면 너도 날 인정할 것 네가 내색을 하지 않아도 결국 그럼 왜 아직 서글서글해 아무리 둘러봐도 딱 너의 컴플렉스 같아 너 하나만 꼭 알아 이 순간 진짜 다 가석에 들게,Come on come on Come on Come on Here up and makes hide nothing Can t stop themes passiated boys down and two give three Yeah Somethings sweet forever One step Turn it s a freed Mr Victory Johnson instruments llegin ma alone lead,"['서다', '어느새다', '여리다', '향기도', '아가씨', '질투', '태우다', '갖다', '당연하다', '얘기', '인정', '내색', '그렇다', '서글서글하다', '둘러보다', '컴플렉스', '순간', '진짜', '가다', '들다']","['make', 'hide', 'stop', 'theme', 'passiated', 'boy', 'give', 'sweet', 'forever', 'step', 'turn', 'freed', 'mr', 'victory', 'johnson', 'instruments', 'llegin', 'alone', 'lead']","['서다', '어느새다', '여리다', '향기도', '아가씨', '질투', '태우다', '갖다', '당연하다', '얘기', '인정', '내색', '그렇다', '서글서글하다', '둘러보다', '컴플렉스', '순간', '진짜', '가다', '들다', 'make', 'hide', 'stop', 'theme', 'passiated', 'boy', 'give', 'sweet', 'forever', 'step', 'turn', 'freed', 'mr', 'victory', 'johnson', 'instruments', 'llegin', 'alone', 'lead']"
+9,Topic 2 (Generated),2025-12-03 19:45:35,"
+angel, era~la, lemgo
+Buzo, segget, oh beats talk yo mamiro de about the dress lies
+Milm, gold eye, hard night!
+Getting this contrar
+Touch, there's roll to play (I want)
+Won't stop this para
+Sugarty, para-la-la-la-, la-Prades, porasciot!
+Like a voyage, aquí, bomb and up (Harmony)
+On bucket for a winner
+A fly lips, from three spid, one three money, hmm-head?
+Yeah, I am just for twenty kiss, forev",,angel era la lemgo Buzo segget oh beats talk yo mamiro de about the dress lies Milm gold eye hard night Getting this contrar Touch there s roll to play I want Won t stop this para Sugarty para la la la la Prades porasciot Like a voyage aqu bomb and up Harmony On bucket for a winner A fly lips from three spid one three money hmm head Yeah I am just for twenty kiss forev,[],"['angel', 'era', 'lemgo', 'buzo', 'segget', 'beat', 'talk', 'mamiro', 'dress', 'lie', 'milm', 'gold', 'eye', 'hard', 'night', 'contrar', 'touch', 'roll', 'play', 'want', 'win', 'stop', 'para', 'sugarty', 'para', 'prade', 'porasciot', 'voyage', 'aqu', 'bomb', 'harmony', 'bucket', 'winner', 'fly', 'lip', 'spid', 'money', 'head', 'twenty', 'kiss', 'forev']","['angel', 'era', 'lemgo', 'buzo', 'segget', 'beat', 'talk', 'mamiro', 'dress', 'lie', 'milm', 'gold', 'eye', 'hard', 'night', 'contrar', 'touch', 'roll', 'play', 'want', 'win', 'stop', 'para', 'sugarty', 'para', 'prade', 'porasciot', 'voyage', 'aqu', 'bomb', 'harmony', 'bucket', 'winner', 'fly', 'lip', 'spid', 'money', 'head', 'twenty', 'kiss', 'forev']"
+10,Topic 2 (Generated),2025-12-03 19:45:39,"너이 날 원해 난 널 원하지 않아
+You know, yuh, ooh-ooh
+Some nobody (Ah)
+오늘은 내 맘대로 take a lotter, something girl (Yeah)
+Galileo, all works (Uh-way), sugar boy (Ooh-ooh-ooh)
+Be moves try everbye the party, to the plans
+고요한 밤 비워내고 푸르렀어도 네게로 시간 갖다 올 수 있었다면 이제 그만 좀 여유를 갖고 just stopthing을 보자
+Just don't never none dead, let's enemy oj Burn in this one, but don't never, I can fieldly high
+나를 깨웠던 그 순간들",너이 날 원해 난 널 원하지 않아 오늘은 내 맘대로 고요한 밤 비워내고 푸르렀어도 네게로 시간 갖다 올 수 있었다면 이제 그만 좀 여유를 갖고 을 보자 나를 깨웠던 그 순간들,You know yuh ooh ooh Some nobody Ah take a lotter something girl Yeah Galileo all works Uh way sugar boy Ooh ooh ooh Be moves try everbye the party to the plans just stopthing Just don t never none dead let s enemy oj Burn in this one but don t never I can fieldly high,"['원하다', '원하다', '오늘', '고요한', '비우다', '푸르다', '게로', '갖다', '오다', '이제', '여유', '갖다', '나르다', '깨우다', '순간']","['nobody', 'lotter', 'girl', 'galileo', 'work', 'way', 'sugar', 'boy', 'move', 'try', 'everbye', 'party', 'plan', 'stopthe', 'none', 'dead', 'enemy', 'oj', 'burn', 'fieldly', 'high']","['원하다', '원하다', '오늘', '고요한', '비우다', '푸르다', '게로', '갖다', '오다', '이제', '여유', '갖다', '나르다', '깨우다', '순간', 'nobody', 'lotter', 'girl', 'galileo', 'work', 'way', 'sugar', 'boy', 'move', 'try', 'everbye', 'party', 'plan', 'stopthe', 'none', 'dead', 'enemy', 'oj', 'burn', 'fieldly', 'high']"
