@@ -7,8 +7,8 @@ import ast # 引入 Abstract Syntax Tree 模組
 import numpy as np
 from tqdm import tqdm
 
-input_file = "data/merged_lyrics_with_labels.csv"
-company = "SM"
+input_file = "data/lyrics_processed_with_tokens.csv"
+#company = "SM"
 df = pd.read_csv(input_file)
 # ====================================================================
 # ⚠️ 1. 資料讀取與準備 (請根據你的實際程式碼修改這部分)
@@ -33,8 +33,8 @@ def convert_str_to_list(list_str):
 df['final_tokens_restored'] = df['final_tokens'].apply(convert_str_to_list)
 documents = df['final_tokens_restored'].tolist()
 
-df = df[df['label name'] == company]
-documents = df['final_tokens_restored'].tolist()
+#df = df[df['label name'] == company]
+#documents = df['final_tokens_restored'].tolist()
 # --------------------------------------------------------------------
 # 接下來的 LDA 流程，請使用這個新的還原欄位
 # --------------------------------------------------------------------
@@ -74,8 +74,8 @@ dictionary = corpora.Dictionary(documents)
 
 # 詞彙過濾：使用最寬鬆的條件來避免丟失核心詞
 dictionary.filter_extremes(
-    no_below=2,  # 詞彙至少在 2 首歌中出現過
-    no_above=0.99,  # 詞彙只有在超過 99% 的歌中出現才移除
+    no_below=10,  # 詞彙至少在 2 首歌中出現過
+    #no_above=0.99,  # 詞彙只有在超過 99% 的歌中出現才移除
     keep_n=None
 )
 
@@ -90,9 +90,14 @@ print(f"✅ 語料庫文檔數: {len(corpus)}")
 # ====================================================================
 
 # ⚠️ 關鍵參數： num_topics (建議從 10 開始嘗試)
-NUM_TOPICS = 2
+NUM_TOPICS = 6
 
 print(f"\n開始訓練 {NUM_TOPICS} 個主題的 LDA 模型...")
+# 稀疏 Alpha: 鼓勵每首歌只專注於少數主題
+EXPERIMENTAL_ALPHA = 0.01
+
+# 稀疏 Eta: 鼓勵每個主題只由少數關鍵詞組成 (0.1 是常見的稀疏值)
+EXPERIMENTAL_ETA = 0.1
 
 lda_model = LdaModel(
     corpus=corpus,
@@ -101,8 +106,8 @@ lda_model = LdaModel(
     random_state=42,  # 設定隨機種子，確保結果可重現
     chunksize=100,
     passes=20,  # 增加迭代次數以提高模型品質
-    alpha='auto',
-    per_word_topics=True  # 這裡通常不需要 per_word_topics
+    alpha=EXPERIMENTAL_ALPHA,
+    eta=EXPERIMENTAL_ETA
 )
 
 print("✅ LDA 模型訓練完成。")
@@ -219,10 +224,78 @@ df[topic_cols] = df[topic_cols].fillna(0.0)
 df['Dominant_Topic_Prob'] = df[topic_cols].max(axis=1)  # 最大概率值
 df['Dominant_Topic'] = df[topic_cols].idxmax(axis=1)  # 最大概率值所在欄位名稱 (例如 'Topic_2_Prob')
 
-# 4. 清理欄位名稱 (移除'_Prob')
-df['Dominant_Topic'] = df['Dominant_Topic'].str.replace('_Prob', '')
+# 4. 清理欄位名稱 (移除'_Prob' 和 'Topic_'，並轉換為整數)
+# 此步驟實現您想要的結果：欄位只保留 1 到 10 的數字
+df['Dominant_Topic_index'] = (
+    df['Dominant_Topic']
+    .str.replace('_Prob', '') # 移除 '_Prob' -> 'Topic_X'
+    .str.replace('Topic_', '') # 移除 'Topic_' -> 'X'
+    .astype(int)              # 轉換為整數
+)
+
+df['Dominant_Topic'] = df['Dominant_Topic'].str.replace('_Prob', '') # 移除 '_Prob' -> 'Topic_X'
+
+# ------------------------------------------------------------------
+# 【修正/新增：找出 Top 3 主導主題及其索引】
+# ------------------------------------------------------------------
+
+# 1. 定義主題概率欄位
+topic_cols = [f'Topic_{i + 1}_Prob' for i in range(NUM_TOPICS)]
+
+# 2. 【核心修正】在計算最大值之前，將所有 NaN 替換為 0.0
+df[topic_cols] = df[topic_cols].fillna(0.0)
 
 
+# 3. 找出 Top 3 主題及其概率和索引
+def get_top_n_topics(row, n=3):
+    """從概率欄位中找出概率最高的前 N 個主題的名稱、值和索引。"""
+    # 選擇所有主題概率欄位，並將結果排序
+    sorted_probs = row[topic_cols].sort_values(ascending=False).head(n)
+
+    results = {}
+    for rank in range(n):
+        topic_key = f'Top{rank + 1}'
+
+        if rank < len(sorted_probs):
+            # 獲取第 rank+1 名的主題欄位名稱 (e.g., 'Topic_X_Prob')
+            topic_col_name = sorted_probs.index[rank]
+
+            # 獲取主題概率值
+            prob_value = sorted_probs.iloc[rank]
+
+            # 提取純主題名稱 (e.g., 'Topic_X')
+            topic_name = topic_col_name.replace('_Prob', '')
+
+            # 提取主題索引 (e.g., X)
+            topic_index = int(topic_name.replace('Topic_', ''))
+
+            results[f'{topic_key}_Topic'] = topic_name
+            results[f'{topic_key}_Prob'] = prob_value
+            results[f'{topic_key}_Topic_Index'] = topic_index  # <-- 新增索引欄位
+        else:
+            # 如果主題數少於 N，則填入預設值
+            results[f'{topic_key}_Topic'] = 'N/A'
+            results[f'{topic_key}_Prob'] = 0.0
+            results[f'{topic_key}_Topic_Index'] = 0  # <-- N/A 索引設為 0
+
+    return pd.Series(results)
+
+
+# 應用此函數到 DataFrame 的每一行
+df_top_topics = df.apply(get_top_n_topics, axis=1)
+
+# 將 Top 3 結果與原始 DataFrame 合併
+# 注意：這裡我們使用 errors='ignore' 來安全地刪除舊的 Dominant 欄位
+df = pd.concat([df.drop(columns=['Dominant_Topic', 'Dominant_Topic_Prob', 'Dominant_Topic_index'], errors='ignore'),
+                df_top_topics], axis=1)
+
+# 將 Top 1 視為 Dominant Topic (與舊欄位保持一致)
+df['Dominant_Topic'] = df['Top1_Topic']
+df['Dominant_Topic_Prob'] = df['Top1_Prob']
+df['Dominant_Topic_index'] = df['Top1_Topic_Index']  # <-- 直接使用 Top1_Topic_Index
+
+
+# ------------------------------------------------------------------
 # ------------------------------------------------------------------
 # 【新增替換：最代表性文檔檢視】
 # ... (display_representative_documents 函式保持不變) ...
@@ -230,28 +303,25 @@ df['Dominant_Topic'] = df['Dominant_Topic'].str.replace('_Prob', '')
 def display_representative_documents(df, num_topics, top_n=5):
     """
     對每個主題，找出概率最高的 Top N 首歌 (即最能代表該主題的文檔)。
+    現在使用 Top1_Topic 欄位進行篩選。
     """
     print("\n==============================================")
     print("👑 最代表性文檔檢視 (Top 5 歌曲/文檔)")
     print("==============================================")
 
-    # 假設你的原始 df 中有 'Song Title' 和 'Artist' 欄位
-    # 如果沒有，請替換成你實際的歌曲識別欄位
-    # display_cols = ['artist', 'title', 'Dominant_Topic_Prob'] # 這裡不再需要這個變數，直接在循環中使用
-
     for i in range(1, num_topics + 1):
         topic_name = f'Topic_{i}'
 
-        # 篩選出以當前主題為主導主題的歌曲
-        topic_subset = df[df['Dominant_Topic'] == topic_name]
+        # 篩選出以當前主題為主導主題的歌曲 (使用 Top1_Topic)
+        topic_subset = df[df['Top1_Topic'] == topic_name]
 
         if topic_subset.empty:
             print(f"主題 #{i} ({topic_name})：沒有主導歌曲。")
             continue
 
-        # 根據 Dominant_Topic_Prob 降序排序，選出 Top N
+        # 根據 Top1_Prob 降序排序，選出 Top N
         top_documents = topic_subset.sort_values(
-            by='Dominant_Topic_Prob',
+            by='Top1_Prob', # 這裡使用 Top1_Prob
             ascending=False
         ).head(top_n)
 
@@ -259,13 +329,11 @@ def display_representative_documents(df, num_topics, top_n=5):
 
         # 打印 Top N 歌曲資訊
         for index, row in top_documents.iterrows():
-            prob = row['Dominant_Topic_Prob']
-            # 確保使用 .get() 方法，以提高程式碼的容錯性
+            prob = row['Top1_Prob'] # 使用 Top1_Prob
             artist = row.get('recording_artist_credit', 'N/A')
             title = row.get('recording_title', 'N/A')
 
             print(f"[{prob:.4f}] {artist} - 《{title}》")
-
 
 # 調用新的檢視函數
 display_representative_documents(df, NUM_TOPICS, top_n=5)
@@ -352,6 +420,26 @@ for topic_id, word_probs in topics_and_probs:
         filename=filename
     )
 
-output_file = f"LDA_topic{NUM_TOPICS}_{company}.csv"
-#output_file = f"LDA_topic{NUM_TOPICS}_kpop.csv"
+
+#output_file = f"LDA_topic{NUM_TOPICS}_{company}.csv"
+output_file = f"LDA_topic{NUM_TOPICS}_kpop.csv"
 df.to_csv(output_file, index=False, encoding='utf-8-sig')
+
+import os
+
+# 定義保存檔案路徑
+MODEL_DIR = "lda_model_assets"
+if not os.path.exists(MODEL_DIR):
+    os.makedirs(MODEL_DIR)
+
+lda_model_path = os.path.join(MODEL_DIR, f"lda_kpop_{NUM_TOPICS}_topics.model")
+dictionary_path = os.path.join(MODEL_DIR, f"lda_kpop_{NUM_TOPICS}_dictionary.dict")
+
+# 1. 保存 LDA 模型 (使用 Gensim 內建的 save 方法)
+lda_model.save(lda_model_path)
+
+# 2. 保存詞典 (這是將新文檔轉換為 BoW 格式所必需的)
+dictionary.save(dictionary_path)
+
+print(f"\n✅ LDA 模型已保存至：{lda_model_path}")
+print(f"✅ 詞典已保存至：{dictionary_path}")
