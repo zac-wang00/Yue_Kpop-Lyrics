@@ -1,0 +1,124 @@
+﻿Song_ID,Topic_Group,Generated_Time,lyrics,korean_lyrics,english_lyrics,korean_tokens,english_tokens,final_tokens,final_tokens_restored,Topic_1_Prob,Topic_2_Prob,Topic_3_Prob,Topic_4_Prob,Topic_5_Prob,Topic_6_Prob,Topic_7_Prob,Topic_8_Prob,Top1_Topic,Top1_Prob,Top1_Topic_Index,Top2_Topic,Top2_Prob,Top2_Topic_Index,Top3_Topic,Top3_Prob,Top3_Topic_Index,Dominant_Topic,Dominant_Topic_Prob,Dominant_Topic_index
+1,Topic 2 (Generated),2025-12-03 18:50:46,"매나시지마해 널 안고 왔어
+You seep, oh baby my honey, let ya girl
+My heart is true, we'reme the starcraining call at again to it (Trick away)
+Let's real didnuted
+No, no line 'caush-na-mazak kiss (got there)
+Shake up, token, I just want to till the crybs
+Don't stop fillure right now, one, night's roller without your past in love (Our kick) Ooh
+Boy for afaramiliate; Nobody Luah
+Can Give b",매나시지마해 널 안고 왔어,You seep oh baby my honey let ya girl My heart is true we reme the starcraining call at again to it Trick away Let s real didnuted No no line caush na mazak kiss got there Shake up token I just want to till the crybs Don t stop fillure right now one night s roller without your past in love Our kick Ooh Boy for afaramiliate Nobody Luah Can Give b,"['매다', '안고', '오다']","['seep', 'baby', 'honey', 'girl', 'heart', 'true', 'reme', 'starcraining', 'call', 'trick', 'away', 'real', 'didnuted', 'line', 'caush', 'mazak', 'kiss', 'shake', 'token', 'want', 'till', 'crybs', 'stop', 'fillure', 'right', 'night', 'roller', 'without', 'past', 'love', 'kick', 'boy', 'afaramiliate', 'nobody', 'luah', 'give']","['매다', '안고', '오다', 'seep', 'baby', 'honey', 'girl', 'heart', 'true', 'reme', 'starcraining', 'call', 'trick', 'away', 'real', 'didnuted', 'line', 'caush', 'mazak', 'kiss', 'shake', 'token', 'want', 'till', 'crybs', 'stop', 'fillure', 'right', 'night', 'roller', 'without', 'past', 'love', 'kick', 'boy', 'afaramiliate', 'nobody', 'luah', 'give']","['매다', '안고', '오다', 'seep', 'baby', 'honey', 'girl', 'heart', 'true', 'reme', 'starcraining', 'call', 'trick', 'away', 'real', 'didnuted', 'line', 'caush', 'mazak', 'kiss', 'shake', 'token', 'want', 'till', 'crybs', 'stop', 'fillure', 'right', 'night', 'roller', 'without', 'past', 'love', 'kick', 'boy', 'afaramiliate', 'nobody', 'luah', 'give']",0.4954286515712738,0.31035131216049194,0.061855148524045944,0.0003563077189028263,0.0003563077189028263,0.0003563077189028263,0.0003563077189028263,0.13093966245651245,Topic_1,0.4954286515712738,1,Topic_2,0.31035131216049194,2,Topic_8,0.13093966245651245,8,Topic_1,0.4954286515712738,1
+2,Topic 2 (Generated),2025-12-03 18:50:50,"널리 진저리 (Yeah, you’re a movie)
+너의 맘을 훔쳐
+아무리 널 가져도
+I can be a something (One heart on)
+어둠이 내려져도 그녀는 너인걸
+
+멈출 수 없는 striketime
+All I need to pretends reach (Stressing into Pulse)
+Baby give up (Causin' do this familiar, ow)
+부디 그대 알아가자
+(Ooh) Take love with you a honeydew
+Tell me, tell me, that's the world
+Good and times that I ruastion
+내 가슴 뛰는 불빛 Heads, burly Higher Before the Night, let the chooc",널리 진저리 너의 맘을 훔쳐 아무리 널 가져도 어둠이 내려져도 그녀는 너인걸 멈출 수 없는 부디 그대 알아가자 내 가슴 뛰는 불빛,Yeah you re a movie I can be a something One heart on striketime All I need to pretends reach Stressing into Pulse Baby give up Causin do this familiar ow Ooh Take love with you a honeydew Tell me tell me that s the world Good and times that I ruastion Heads burly Higher Before the Night let the chooc,"['널리', '진저리', '훔치다', '가다', '어둠', '내려지다', '그녀', '멈추다', '부디', '그대', '알다', '가슴', '뛰다', '불빛']","['movie', 'heart', 'striketime', 'need', 'pretend', 'reach', 'stress', 'pulse', 'baby', 'give', 'causin', 'familiar', 'ow', 'love', 'honeydew', 'tell', 'tell', 'world', 'good', 'time', 'ruastion', 'head', 'burly', 'high', 'night', 'chooc']","['널리', '진저리', '훔치다', '가다', '어둠', '내려지다', '그녀', '멈추다', '부디', '그대', '알다', '가슴', '뛰다', '불빛', 'movie', 'heart', 'striketime', 'need', 'pretend', 'reach', 'stress', 'pulse', 'baby', 'give', 'causin', 'familiar', 'ow', 'love', 'honeydew', 'tell', 'tell', 'world', 'good', 'time', 'ruastion', 'head', 'burly', 'high', 'night', 'chooc']","['널리', '진저리', '훔치다', '가다', '어둠', '내려지다', '그녀', '멈추다', '부디', '그대', '알다', '가슴', '뛰다', '불빛', 'movie', 'heart', 'striketime', 'need', 'pretend', 'reach', 'stress', 'pulse', 'baby', 'give', 'causin', 'familiar', 'ow', 'love', 'honeydew', 'tell', 'tell', 'world', 'good', 'time', 'ruastion', 'head', 'burly', 'high', 'night', 'chooc']",0.39146938920021057,0.21353545784950256,0.1758652776479721,0.12019650638103485,0.0003440211876295507,0.0003440211876295507,0.0003440211876295507,0.09790132194757462,Topic_1,0.39146938920021057,1,Topic_2,0.21353545784950256,2,Topic_3,0.1758652776479721,3,Topic_1,0.39146938920021057,1
+3,Topic 2 (Generated),2025-12-03 18:50:53,"엔어군대로
+뭐라 해도 이거라면 완벽한 존재야 (Yeah)
+이유가 분명해 난 네가 좋던 날을 기억하니까 (No!) My nice 왔어요
+(Ooh, yeah)
+But I want to hate it come see
+I'll be a truising throughed the gray lovescue and you make was just donease without you?
+My nickle time okay to stand alive yault runway forever, baby, in that, only writs
+And I wanna leave with your spotlights, the amusett's everything fallace boy
+너와는 달리 괜찮아 보이는 니 발목을 잡을래 잡아 꽉 끼는 볼을",엔어군대로 뭐라 해도 이거라면 완벽한 존재야 이유가 분명해 난 네가 좋던 날을 기억하니까 왔어요 너와는 달리 괜찮아 보이는 니 발목을 잡을래 잡아 꽉 끼는 볼을,Yeah No My nice Ooh yeah But I want to hate it come see I ll be a truising throughed the gray lovescue and you make was just donease without you My nickle time okay to stand alive yault runway forever baby in that only writs And I wanna leave with your spotlights the amusett s everything fallace boy,"['어군', '뭐라다', '해도', '이다', '완벽하다', '존재', '이유', '분명하다', '좋다', '기억', '오다', '달리', '괜찮다', '보이다', '발목', '잡다', '잡다', '끼다']","['nice', 'want', 'hate', 'truising', 'throughe', 'gray', 'lovescue', 'make', 'donease', 'without', 'nickle', 'time', 'stand', 'alive', 'yault', 'runway', 'forever', 'baby', 'writ', 'want', 'leave', 'spotlight', 'amusett', 'fallace', 'boy']","['어군', '뭐라다', '해도', '이다', '완벽하다', '존재', '이유', '분명하다', '좋다', '기억', '오다', '달리', '괜찮다', '보이다', '발목', '잡다', '잡다', '끼다', 'nice', 'want', 'hate', 'truising', 'throughe', 'gray', 'lovescue', 'make', 'donease', 'without', 'nickle', 'time', 'stand', 'alive', 'yault', 'runway', 'forever', 'baby', 'writ', 'want', 'leave', 'spotlight', 'amusett', 'fallace', 'boy']","['어군', '뭐라다', '해도', '이다', '완벽하다', '존재', '이유', '분명하다', '좋다', '기억', '오다', '달리', '괜찮다', '보이다', '발목', '잡다', '잡다', '끼다', 'nice', 'want', 'hate', 'truising', 'throughe', 'gray', 'lovescue', 'make', 'donease', 'without', 'nickle', 'time', 'stand', 'alive', 'yault', 'runway', 'forever', 'baby', 'writ', 'want', 'leave', 'spotlight', 'amusett', 'fallace', 'boy']",0.2688048779964447,0.1498776227235794,0.4636119604110718,0.0003024921752512455,0.0003024921752512455,0.0003024921752512455,0.0003024921752512455,0.11649559438228607,Topic_3,0.4636119604110718,3,Topic_1,0.2688048779964447,1,Topic_2,0.1498776227235794,2,Topic_3,0.4636119604110718,3
+4,Topic 2 (Generated),2025-12-03 18:50:57,"널 보는 재미가 막심한 아저씨
+그런 아저씨, 네겐 니 조급해 보이진 않아
+네 그림자로 난 (Ooh, ooh)
+다 큰 내 맘 봐 나를 맡겨봐 baby
+
+시덥잖아서 안달하는 애도
+ 이젠 관심 말아줘 속 시원하게
+내 손 놓지 마 견가난 망설임 like a wish
+
+Bring the day GIRLLAY, I'm cryin', ya had to chang (What?)
+Oh, 너무 좋았어 너는 왜 좋아?
+Okiss me, now this fanna parts, and so texts are gettlestop
+Ama please likescreams the Writed in the D LE SSIN 'HERATED TJ RM! A",널 보는 재미가 막심한 아저씨 그런 아저씨 네겐 니 조급해 보이진 않아 네 그림자로 난 다 큰 내 맘 봐 나를 맡겨봐 시덥잖아서 안달하는 애도 이젠 관심 말아줘 속 시원하게 내 손 놓지 마 견가난 망설임 너무 좋았어 너는 왜 좋아,Ooh ooh baby like a wish Bring the day GIRLLAY I m cryin ya had to chang What Oh Okiss me now this fanna parts and so texts are gettlestop Ama please likescreams the Writed in the D LE SSIN HERATED TJ RM A,"['재미', '막심', '아저씨', '그렇다', '아저씨', '네겐', '조급하다', '보이다', '그림자', '크다', '나르다', '맡기다', '덥다', '안달', '애도', '관심', '말다', '시원하다', '놓다', '견가', '망설이다', '좋다', '좋다']","['baby', 'wish', 'bring', 'day', 'girllay', 'cryin', 'chang', 'okiss', 'fanna', 'part', 'text', 'gettlestop', 'ama', 'likescream', 'write', 'le', 'ssin', 'herate', 'tj', 'rm']","['재미', '막심', '아저씨', '그렇다', '아저씨', '네겐', '조급하다', '보이다', '그림자', '크다', '나르다', '맡기다', '덥다', '안달', '애도', '관심', '말다', '시원하다', '놓다', '견가', '망설이다', '좋다', '좋다', 'baby', 'wish', 'bring', 'day', 'girllay', 'cryin', 'chang', 'okiss', 'fanna', 'part', 'text', 'gettlestop', 'ama', 'likescream', 'write', 'le', 'ssin', 'herate', 'tj', 'rm']","['재미', '막심', '아저씨', '그렇다', '아저씨', '네겐', '조급하다', '보이다', '그림자', '크다', '나르다', '맡기다', '덥다', '안달', '애도', '관심', '말다', '시원하다', '놓다', '견가', '망설이다', '좋다', '좋다', 'baby', 'wish', 'bring', 'day', 'girllay', 'cryin', 'chang', 'okiss', 'fanna', 'part', 'text', 'gettlestop', 'ama', 'likescream', 'write', 'le', 'ssin', 'herate', 'tj', 'rm']",0.19575969874858856,0.0637681633234024,0.35148724913597107,0.00032219846616499126,0.0932793989777565,0.03246628865599632,0.032512590289115906,0.23040437698364258,Topic_3,0.35148724913597107,3,Topic_8,0.23040437698364258,8,Topic_1,0.19575969874858856,1,Topic_3,0.35148724913597107,3
+5,Topic 2 (Generated),2025-12-03 18:51:01,"룩 네겐 (Yeah)
+눈이 부신 너와 나 별
+Oh, it's you out
+Don't come to my nice rock with love?
+(Ow) I didn’t was pickin', 즉석에서 바로 알어가 집요하게 울려퍼진 내 노래 들려줘 봐 everyday
+Poppin'
+이럴 때쯤이면 우린 깨어 날 거야 babe on tax 속에
+더 깊이 잠들어 올거라 알려주게 될 테고 생각되니
+
+All the time's going that standbecause you crazy, ay enjoy you crazy (For relations sexy) 내 품에 널 안아줄래 (Now Goodbye)
+And let knowed her me fine a plant",룩 네겐 눈이 부신 너와 나 별 즉석에서 바로 알어가 집요하게 울려퍼진 내 노래 들려줘 봐 이럴 때쯤이면 우린 깨어 날 거야 속에 더 깊이 잠들어 올거라 알려주게 될 테고 생각되니 내 품에 널 안아줄래,Yeah Oh it s you out Don t come to my nice rock with love Ow I didn t was pickin everyday Poppin babe on tax All the time s going that standbecause you crazy ay enjoy you crazy For relations sexy Now Goodbye And let knowed her me fine a plant,"['네겐', '부신', '즉석', '알다', '집요하다', '울리다', '노래', '들려주다', '이렇다', '이면', '우린', '깨다', '깊이', '잠들다', '오다', '알다', '되다', '생각', '되다', '안다']","['nice', 'rock', 'love', 'ow', 'pickin', 'everyday', 'poppin', 'baby', 'tax', 'time', 'standbecause', 'crazy', 'enjoy', 'crazy', 'relation', 'sexy', 'goodbye', 'fine', 'plant']","['네겐', '부신', '즉석', '알다', '집요하다', '울리다', '노래', '들려주다', '이렇다', '이면', '우린', '깨다', '깊이', '잠들다', '오다', '알다', '되다', '생각', '되다', '안다', 'nice', 'rock', 'love', 'ow', 'pickin', 'everyday', 'poppin', 'baby', 'tax', 'time', 'standbecause', 'crazy', 'enjoy', 'crazy', 'relation', 'sexy', 'goodbye', 'fine', 'plant']","['네겐', '부신', '즉석', '알다', '집요하다', '울리다', '노래', '들려주다', '이렇다', '이면', '우린', '깨다', '깊이', '잠들다', '오다', '알다', '되다', '생각', '되다', '안다', 'nice', 'rock', 'love', 'ow', 'pickin', 'everyday', 'poppin', 'baby', 'tax', 'time', 'standbecause', 'crazy', 'enjoy', 'crazy', 'relation', 'sexy', 'goodbye', 'fine', 'plant']",0.19511547684669495,0.22198520600795746,0.5813400745391846,0.00031189079163596034,0.00031189079163596034,0.00031189079163596034,0.00031189079163596034,0.00031189079163596034,Topic_3,0.5813400745391846,3,Topic_2,0.22198520600795746,2,Topic_1,0.19511547684669495,1,Topic_3,0.5813400745391846,3
+6,Topic 2 (Generated),2025-12-03 18:51:05,"위 널 그리며 난 너의 매력에
+웃고 있잖아 (Oh, woah)
+나를 알아줘 정말 많이 알죠 날 마법처럼 여긴 many*
+이 많은 네 사랑을 전하고 싶어
+내게 줬으니 나마주길 바래 babe
+But I just want to know the principate in love on you and let's say good here
+I'm a la-la-cause more fallin’ downlove our nights around, boy you came?
+(Ma, mah, mmWTRUNIZY YA? MX THERED, x1)
+Shawty, that storming taste off year form
+Just reversalence for true chance, alright?
+(I편, ey), J",위 널 그리며 난 너의 매력에 웃고 있잖아 나를 알아줘 정말 많이 알죠 날 마법처럼 여긴 이 많은 네 사랑을 전하고 싶어 내게 줬으니 나마주길 바래 편,Oh woah many babe But I just want to know the principate in love on you and let s say good here I m a la la cause more fallin downlove our nights around boy you came Ma mah mmWTRUNIZY YA MX THERED x Shawty that storming taste off year form Just reversalence for true chance alright I ey J,"['그리다', '매력', '웃다', '나르다', '알아주다', '정말', '마법', '여기다', '많다', '사랑', '전하', '내다', '주다', '나마', '주다']","['many', 'baby', 'want', 'principate', 'love', 'say', 'good', 'fallin', 'downlove', 'night', 'around', 'boy', 'mah', 'mmwtrunizy', 'mx', 'shawty', 'storm', 'taste', 'year', 'form', 'reversalence', 'true', 'chance', 'alright', 'ey']","['그리다', '매력', '웃다', '나르다', '알아주다', '정말', '마법', '여기다', '많다', '사랑', '전하', '내다', '주다', '나마', '주다', 'many', 'baby', 'want', 'principate', 'love', 'say', 'good', 'fallin', 'downlove', 'night', 'around', 'boy', 'mah', 'mmwtrunizy', 'mx', 'shawty', 'storm', 'taste', 'year', 'form', 'reversalence', 'true', 'chance', 'alright', 'ey']","['그리다', '매력', '웃다', '나르다', '알아주다', '정말', '마법', '여기다', '많다', '사랑', '전하', '내다', '주다', '나마', '주다', 'many', 'baby', 'want', 'principate', 'love', 'say', 'good', 'fallin', 'downlove', 'night', 'around', 'boy', 'mah', 'mmwtrunizy', 'mx', 'shawty', 'storm', 'taste', 'year', 'form', 'reversalence', 'true', 'chance', 'alright', 'ey']",0.2383032739162445,0.27752187848091125,0.21592402458190918,0.20861965417861938,0.00030243321089074016,0.00030243321089074016,0.05872393772006035,0.00030243321089074016,Topic_2,0.27752187848091125,2,Topic_1,0.2383032739162445,1,Topic_3,0.21592402458190918,3,Topic_2,0.27752187848091125,2
+7,Topic 2 (Generated),2025-12-03 18:51:08,"
+난 좀 서툴렀지만
+이제서야 눈 뜨고 널 알아가던
+내 맘을 읽어 낼 수 있었어
+너도 뭔가 쓸데없는 소리 그만 하고 들어가볼래 (Woo, ooh)
+알잖아 나 이제 이리 밀당 하기 시작해, luv my drama, luv my cult
+I can't tell the split 너의 손을 잡아요
+Lewish 사랑 얘기 즐겨 마요네 그려 넣어줘 봐 babe
+Roll-in, roll-in', la-la-la
+Don't stop fall에 담은 스토리는.
+Just party, a-muscle and thougas get together for your name
+Ready to ride Myth
+널 따라오는 길 네게로 난
+하나까지 놓쳐선 안돼 내 마음 모두
+잡았군",난 좀 서툴렀지만 이제서야 눈 뜨고 널 알아가던 내 맘을 읽어 낼 수 있었어 너도 뭔가 쓸데없는 소리 그만 하고 들어가볼래 알잖아 나 이제 이리 밀당 하기 시작해 너의 손을 잡아요 사랑 얘기 즐겨 마요네 그려 넣어줘 봐 에 담은 스토리는 널 따라오는 길 네게로 난 하나까지 놓쳐선 안돼 내 마음 모두 잡았군,Woo ooh luv my drama luv my cult I can t tell the split Lewish babe Roll in roll in la la la Don t stop fall Just party a muscle and thougas get together for your name Ready to ride Myth,"['서투르다', '이제', '서다', '뜨다', '알다', '읽다', '뭔가', '쓸데없다', '소리', '들어가다', '알다', '이제', '밀당', '시작', '잡다', '사랑', '얘기', '즐기다', '그리다', '넣다', '담다', '스토리', '따라오다', '게로', '놓치다', '마음', '잡다']","['luv', 'drama', 'luv', 'cult', 'tell', 'split', 'lewish', 'baby', 'roll', 'roll', 'stop', 'fall', 'party', 'muscle', 'thougas', 'together', 'name', 'ready', 'ride', 'myth']","['서투르다', '이제', '서다', '뜨다', '알다', '읽다', '뭔가', '쓸데없다', '소리', '들어가다', '알다', '이제', '밀당', '시작', '잡다', '사랑', '얘기', '즐기다', '그리다', '넣다', '담다', '스토리', '따라오다', '게로', '놓치다', '마음', '잡다', 'luv', 'drama', 'luv', 'cult', 'tell', 'split', 'lewish', 'baby', 'roll', 'roll', 'stop', 'fall', 'party', 'muscle', 'thougas', 'together', 'name', 'ready', 'ride', 'myth']","['서투르다', '이제', '서다', '뜨다', '알다', '읽다', '뭔가', '쓸데없다', '소리', '들어가다', '알다', '이제', '밀당', '시작', '잡다', '사랑', '얘기', '즐기다', '그리다', '넣다', '담다', '스토리', '따라오다', '게로', '놓치다', '마음', '잡다', 'luv', 'drama', 'luv', 'cult', 'tell', 'split', 'lewish', 'baby', 'roll', 'roll', 'stop', 'fall', 'party', 'muscle', 'thougas', 'together', 'name', 'ready', 'ride', 'myth']",0.1474340409040451,0.07449351996183395,0.34825029969215393,0.11870642751455307,0.026000143960118294,0.0002560335851740092,0.0002560335851740092,0.284603476524353,Topic_3,0.34825029969215393,3,Topic_8,0.284603476524353,8,Topic_1,0.1474340409040451,1,Topic_3,0.34825029969215393,3
+8,Topic 2 (Generated),2025-12-03 18:51:12,"
+난 바보처럼 우연히 그녀와 마주친 순간, 난 다시 너의 행운에 감화됐던 날.
+하지만 너무 늦은 시간 속이었다 생각했어 정말 지겹게도 갔다
+No my daybe (Oh yeah)
+눈물더미로 시작조차 안한 나 기억 속에 맴도는 밤이었죠 그 맘에
+너 대신 그대 앞에 펼쳐진
+빛나는 거위 놓치지 마요 내게 기회를 열어요
+My, only good love without me, baby
+You're something to girl, no my words holden now
+이젠 내가 널 믿을게 돼
+힘들 때 난 눈을 감고 잠이 들었지 oh-oh (Yo, you make me crazy) 외쳐봐 나는
+너의 체온과 나의 발목을 매단 채
+마셔도 살 수도 누구 사랑할 수 없다고",난 바보처럼 우연히 그녀와 마주친 순간 난 다시 너의 행운에 감화됐던 날 하지만 너무 늦은 시간 속이었다 생각했어 정말 지겹게도 갔다 눈물더미로 시작조차 안한 나 기억 속에 맴도는 밤이었죠 그 맘에 너 대신 그대 앞에 펼쳐진 빛나는 거위 놓치지 마요 내게 기회를 열어요 이젠 내가 널 믿을게 돼 힘들 때 난 눈을 감고 잠이 들었지 외쳐봐 나는 너의 체온과 나의 발목을 매단 채 마셔도 살 수도 누구 사랑할 수 없다고,No my daybe Oh yeah My only good love without me baby You re something to girl no my words holden now oh oh Yo you make me crazy,"['바보', '그녀', '마주치다', '순간', '다시', '행운', '늦다', '속이다', '생각', '정말', '지겹다', '가다', '눈물', '더미', '시작', '기억', '맴도', '이다', '대신', '그대', '펼쳐지다', '빛나다', '거위', '놓치다', '내다', '기회', '열다', '믿다', '힘들다', '감고', '들다', '외치다', '체온', '발목', '매달다', '마시다', '수도', '사랑']","['daybe', 'good', 'love', 'without', 'baby', 'girl', 'word', 'holden', 'make', 'crazy']","['바보', '그녀', '마주치다', '순간', '다시', '행운', '늦다', '속이다', '생각', '정말', '지겹다', '가다', '눈물', '더미', '시작', '기억', '맴도', '이다', '대신', '그대', '펼쳐지다', '빛나다', '거위', '놓치다', '내다', '기회', '열다', '믿다', '힘들다', '감고', '들다', '외치다', '체온', '발목', '매달다', '마시다', '수도', '사랑', 'daybe', 'good', 'love', 'without', 'baby', 'girl', 'word', 'holden', 'make', 'crazy']","['바보', '그녀', '마주치다', '순간', '다시', '행운', '늦다', '속이다', '생각', '정말', '지겹다', '가다', '눈물', '더미', '시작', '기억', '맴도', '이다', '대신', '그대', '펼쳐지다', '빛나다', '거위', '놓치다', '내다', '기회', '열다', '믿다', '힘들다', '감고', '들다', '외치다', '체온', '발목', '매달다', '마시다', '수도', '사랑', 'daybe', 'good', 'love', 'without', 'baby', 'girl', 'word', 'holden', 'make', 'crazy']",0.027367498725652695,0.13916541635990143,0.4638334810733795,0.32847949862480164,0.00023225636687129736,0.00023225636687129736,0.00023225636687129736,0.040457483381032944,Topic_3,0.4638334810733795,3,Topic_4,0.32847949862480164,4,Topic_2,0.13916541635990143,2,Topic_3,0.4638334810733795,3
+9,Topic 2 (Generated),2025-12-03 18:51:16,"간-일이 된 듯한 기분은 뭘까?
+
+Like ano dress loves neg해
+(Smell, smell)
+다름이 아닌 thing (Darling me, dara)
+너를 내버려둬 안달하는 나 (Ooh-ooh, boy, good-bye, girl)
+한심했던 시간 너의 모습 알고 보면 yeah?
+Ain't even God, can take afr
+And I want to fool in love
+I know you're stupid your pretty special
+Nice and just the desert for more
+Something arounds, respirations
+Proom, proudin', predict at reaasht of angel
+Worrys, the Days o",간 일이 된 듯한 기분은 뭘까 해 다름이 아닌 너를 내버려둬 안달하는 나 한심했던 시간 너의 모습 알고 보면,Like ano dress loves neg Smell smell thing Darling me dara Ooh ooh boy good bye girl yeah Ain t even God can take afr And I want to fool in love I know you re stupid your pretty special Nice and just the desert for more Something arounds respirations Proom proudin predict at reaasht of angel Worrys the Days o,"['되다', '기분', '끄다', '다르다', '아니다', '내버리다', '두다', '안달', '한심하다', '모습']","['ano', 'dress', 'love', 'neg', 'smell', 'smell', 'darle', 'dara', 'boy', 'good', 'bye', 'girl', 'even', 'god', 'afr', 'want', 'fool', 'love', 'stupid', 'pretty', 'special', 'nice', 'desert', 'around', 'respiration', 'proom', 'proudin', 'predict', 'reaasht', 'angel', 'worry', 'day']","['되다', '기분', '끄다', '다르다', '아니다', '내버리다', '두다', '안달', '한심하다', '모습', 'ano', 'dress', 'love', 'neg', 'smell', 'smell', 'darle', 'dara', 'boy', 'good', 'bye', 'girl', 'even', 'god', 'afr', 'want', 'fool', 'love', 'stupid', 'pretty', 'special', 'nice', 'desert', 'around', 'respiration', 'proom', 'proudin', 'predict', 'reaasht', 'angel', 'worry', 'day']","['되다', '기분', '끄다', '다르다', '아니다', '내버리다', '두다', '안달', '한심하다', '모습', 'ano', 'dress', 'love', 'neg', 'smell', 'smell', 'darle', 'dara', 'boy', 'good', 'bye', 'girl', 'even', 'god', 'afr', 'want', 'fool', 'love', 'stupid', 'pretty', 'special', 'nice', 'desert', 'around', 'respiration', 'proom', 'proudin', 'predict', 'reaasht', 'angel', 'worry', 'day']",0.4339277744293213,0.2517562806606293,0.19410406053066254,0.081709124147892,0.0003026496560778469,0.0003026496560778469,0.0003026496560778469,0.0375947430729866,Topic_1,0.4339277744293213,1,Topic_2,0.2517562806606293,2,Topic_3,0.19410406053066254,3,Topic_1,0.4339277744293213,1
+10,Topic 2 (Generated),2025-12-03 18:51:19,"원이 나 이리로 와
+오 소원은 들어줄래 말해줘요
+Naha-na-na-na-na-na
+Aray, ah, look around and you?
+Can't wasting be this time of yeah
+미쳐 (Hoo, how)
+Let's go one, enough (Ow)
+내게로 (Everything easy I'm ready) 널 갖고 싶어 난
+I fell into the gray scenity
+난 더는 안될 거라고 말했어
+(Ow) Yeah! (You’re my heart, not toxic), I want passy
+
+Give with me, just talk for a changi
+Somebody to know that stoppools mys",원이 나 이리로 와 오 소원은 들어줄래 말해줘요 미쳐 내게로 널 갖고 싶어 난 난 더는 안될 거라고 말했어,Naha na na na na na Aray ah look around and you Can t wasting be this time of yeah Hoo how Let s go one enough Ow Everything easy I m ready I fell into the gray scenity Ow Yeah You re my heart not toxic I want passy Give with me just talk for a changi Somebody to know that stoppools mys,"['오다', '소원', '들어주다', '해주다', '미치다', '내게로', '갖다', '안되다']","['naha', 'aray', 'around', 'wasting', 'time', 'enough', 'ow', 'easy', 'ready', 'fall', 'gray', 'scenity', 'ow', 'heart', 'toxic', 'want', 'passy', 'give', 'talk', 'changi', 'somebody', 'stoppool', 'mys']","['오다', '소원', '들어주다', '해주다', '미치다', '내게로', '갖다', '안되다', 'naha', 'aray', 'around', 'wasting', 'time', 'enough', 'ow', 'easy', 'ready', 'fall', 'gray', 'scenity', 'ow', 'heart', 'toxic', 'want', 'passy', 'give', 'talk', 'changi', 'somebody', 'stoppool', 'mys']","['오다', '소원', '들어주다', '해주다', '미치다', '내게로', '갖다', '안되다', 'naha', 'aray', 'around', 'wasting', 'time', 'enough', 'ow', 'easy', 'ready', 'fall', 'gray', 'scenity', 'ow', 'heart', 'toxic', 'want', 'passy', 'give', 'talk', 'changi', 'somebody', 'stoppool', 'mys']",0.37400710582733154,0.276744544506073,0.22925467789173126,0.11825942248106003,0.0004335448320489377,0.0004335448320489377,0.0004335448320489377,0.0004335448320489377,Topic_1,0.37400710582733154,1,Topic_2,0.276744544506073,2,Topic_3,0.22925467789173126,3,Topic_1,0.37400710582733154,1
